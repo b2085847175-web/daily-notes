@@ -1,0 +1,100 @@
+# ========== 基础类型 ==========
+age: 18                 # 整数
+name: 张三              # 字符串，中文不需要必须加引号
+height: 175.5           # 小数
+is_student: true        # 布尔值
+nickname: null          # 空值，也可以写 ~
+birthday: 2008-01-01    # 日期格式
+
+# ========== 字符串写法 ==========
+address: 北京市朝阳区       # 没有特殊字符时可以不加引号
+school: "实验中学"          # 双引号字符串
+remark: '注意: 冒号建议加引号'   # 包含冒号时加引号更安全
+
+# ========== 列表 ==========
+hobbies:
+  - 篮球
+  - 音乐
+  - coding
+
+# 行内列表
+tags: [student, class-3]
+
+# ========== 字典 ==========
+contact:
+  phone: "13800000000"
+  email: test@example.com
+  city: 北京
+
+# 行内字典
+simple_user: { id: 1001, level: vip }
+
+# ========== 嵌套结构 ==========
+student:
+  name: 张三
+  age: 18
+  score:
+    chinese: 92
+    math: 98
+    english: 95
+  subjects:
+    - name: 数学
+      teacher: 王老师
+      classroom: 301
+    - name: 英语
+      teacher: 李老师
+      classroom: 302
+
+# ========== 多行文本 ==========
+description: |
+  这是 literal block 格式。
+  每一行换行都会保留。
+  适合保存长文本。
+
+summary: >
+  这是 folded block 格式，
+  多行内容会被折叠成一行，
+  适合保存较长的普通句子。
+
+# ========== 锚点和引用 ==========
+# default_env 是锚点，dev_env 和 test_env 都可以复用它
+default_env: &default_env
+  timeout: 10
+  retry: 3
+  content_type: application/json
+
+dev_env:
+  <<: *default_env
+  base_url: http://dev.example.com
+
+test_env:
+  <<: *default_env
+  base_url: http://test.example.com
+  retry: 5
+
+# ========== 接口自动化常用结构 ==========
+api_case:
+  case_title: 登录后加入购物车
+  module: 商城模块
+  request:
+    method: post
+    base_url: http://shop.example.com
+    path: /api/cart/save
+    headers:
+      application: app
+      application_client_type: weixin
+    params:
+      goods_id: 2
+      stock: 3
+  validate:
+    - code: 200
+    - msg: 加入成功
+
+# 列表里嵌套字典，适合表示多组参数化数据
+login_data:
+  - accounts: youyi
+    pwd: "123456"
+    expected: 登录成功
+  - accounts: empty_user
+    pwd: ""
+    expected: 账号不存在

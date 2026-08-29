@@ -1,0 +1,29 @@
+# 教学用标准登录接口用例
+基础配置:
+  用例类型: ApiCase
+  用例标题: 商城登录接口
+  一级模块: 登录模块
+  二级模块: 用户登录
+  优先级: P0
+
+用例步骤:
+  - 发送登录请求:
+      操作类型: 发送请求POST
+      请求地址: http://shop-xo.hctestedu.com
+      URL参数:
+        s: /api/user/login
+        application: app
+        application_client_type: weixin
+      请求头:
+        Content-Type: application/x-www-form-urlencoded
+      请求数据:
+        accounts: youyi
+        pwd: "123456"
+        type: username
+
+# 断言字段可以后续由执行器统一处理
+#断言:
+#  状态码: 200
+#  响应消息: 登录成功
+#  提取数据:
+#    token: $..token
