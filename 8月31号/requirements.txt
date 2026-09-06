@@ -1,0 +1,8 @@
+allure-combine==1.0.11
+allure-pytest==2.13.5
+Jinja2==3.1.6
+jsonpath==0.82.2
+pytest==9.1.1
+PyYAML==6.0.3
+requests==2.34.2
+tqdm==4.67.3

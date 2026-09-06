@@ -1,0 +1,21 @@
+URL: http://shop-xo.hctestedu.com  #测试环境
+
+#数据库信息
+_数据库:
+  电商数据库:
+    host: shop-xo.hctestedu.com
+    port: 3306
+    user: api_test
+    password: Aa9999!
+    db: shopxo_hctested
+
+  读书屋数据库:
+    host: shop-xo.hctestedu.com
+    port: 3306
+    user: api_test
+    password: Aa9999!
+    db: novel-plus
+
+#可能要变化的数据都放在这个文件
+session_reuse: True #session复用 保持在同一个会话
+key_dir: ./HAT/key_dir

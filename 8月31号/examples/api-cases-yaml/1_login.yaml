@@ -1,0 +1,28 @@
+基础配置:
+  用例类型: ApiCase
+  用例标题: 商城登录用例标题
+  一级模块: 登录模块
+  二级模块: 登录功能
+
+前置脚本:
+  - "context.update({'name': 'youer'})"
+后置脚本: ""
+
+用例步骤:
+  - 发送登陆接口:
+      操作类型: 发送请求POST
+      请求地址: '{{URL}}'
+      URL参数:
+        s: /api/user/login
+        application: app
+        application_client_type: weixin
+      请求数据:
+        accounts: '{{name}}'
+        pwd: '123456'
+        type: username
+
+  - 提取响应数据token:
+      操作类型: 提取数据JSON
+      表达式: $..token
+      下标: 0
+      变量名: my_token

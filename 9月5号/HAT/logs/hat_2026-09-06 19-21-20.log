@@ -1,0 +1,38 @@
+2026-09-06 19:21:20.578 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：请求参数-----
+2026-09-06 19:21:20.578 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 请求参数:{'操作类型': '发送请求POST', '请求地址': 'http://shop-xo.hctestedu.com', 'URL参数': {'s': '/api/user/login', 'application': 'app', 'application_client_type': 'weixin'}, '请求数据': {'accounts': 'youyi', 'pwd': '123456', 'type': 'username'}}
+2026-09-06 19:21:20.578 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：请求参数-----
+2026-09-06 19:21:20.727 | INFO     | HAT.keywords.api_keywords:发送请求POST:57 - 发送了请求
+2026-09-06 19:21:20.731 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：提取json数据-----
+2026-09-06 19:21:20.732 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 提取json数据:{'操作类型': '提取数据JSON', '表达式': '$..msg', '下标': 0, '变量名': 'my_msg'}
+2026-09-06 19:21:20.732 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：提取json数据-----
+2026-09-06 19:21:20.743 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：请求参数-----
+2026-09-06 19:21:20.743 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 请求参数:{'操作类型': '发送请求POST', '请求地址': 'http://shop-xo.hctestedu.com', 'URL参数': {'s': '/api/user/login', 'application': 'app', 'application_client_type': 'weixin'}, '请求数据': {'accounts': 'yyouyi', 'pwd': '123456', 'type': 'username'}}
+2026-09-06 19:21:20.743 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：请求参数-----
+2026-09-06 19:21:20.905 | INFO     | HAT.keywords.api_keywords:发送请求POST:57 - 发送了请求
+2026-09-06 19:21:20.907 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：提取json数据-----
+2026-09-06 19:21:20.907 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 提取json数据:{'操作类型': '提取数据JSON', '表达式': '$..msg', '下标': 0, '变量名': 'my_msg'}
+2026-09-06 19:21:20.907 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：提取json数据-----
+2026-09-06 19:21:20.914 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：请求参数-----
+2026-09-06 19:21:20.914 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 请求参数:{'操作类型': '发送请求POST', '请求地址': 'http://shop-xo.hctestedu.com', 'URL参数': {'s': '/api/user/login', 'application': 'app', 'application_client_type': 'weixin'}, '请求数据': {'accounts': 'youyi', 'pwd': '1234567', 'type': 'username'}}
+2026-09-06 19:21:20.914 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：请求参数-----
+2026-09-06 19:21:21.047 | INFO     | HAT.keywords.api_keywords:发送请求POST:57 - 发送了请求
+2026-09-06 19:21:21.048 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：提取json数据-----
+2026-09-06 19:21:21.048 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 提取json数据:{'操作类型': '提取数据JSON', '表达式': '$..msg', '下标': 0, '变量名': 'my_msg'}
+2026-09-06 19:21:21.048 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：提取json数据-----
+2026-09-06 19:21:21.056 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：请求参数-----
+2026-09-06 19:21:21.056 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 请求参数:{'操作类型': '发送请求POST', '请求地址': 'http://shop-xo.hctestedu.com', 'URL参数': {'s': '/api/user/login', 'application': 'app', 'application_client_type': 'weixin'}, '请求数据': {'accounts': 'youyi', 'pwd': '123456', 'type': 'username'}}
+2026-09-06 19:21:21.056 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：请求参数-----
+2026-09-06 19:21:21.205 | INFO     | HAT.keywords.api_keywords:发送请求POST:57 - 发送了请求
+2026-09-06 19:21:21.207 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：提取json数据-----
+2026-09-06 19:21:21.207 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 提取json数据:{'操作类型': '提取数据JSON', '表达式': '$..token', '下标': 0, '变量名': 'my_token'}
+2026-09-06 19:21:21.207 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：提取json数据-----
+2026-09-06 19:21:21.208 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：提取json数据-----
+2026-09-06 19:21:21.208 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 提取json数据:{'操作类型': '提取数据JSON', '表达式': '$..msg', '下标': 0, '变量名': 'my_msg'}
+2026-09-06 19:21:21.208 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：提取json数据-----
+2026-09-06 19:21:21.770 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：请求参数-----
+2026-09-06 19:21:21.771 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 请求参数:{'操作类型': '发送请求POST', '请求地址': 'http://shop-xo.hctestedu.com', 'URL参数': {'s': 'api/cart/save', 'application': 'app', 'application_client_type': 'weixin', 'token': '95d95daffae4b23b7277f60fdeb1c761'}, '请求数据': {'goods_id': '2,', 'stock': '1,'}}
+2026-09-06 19:21:21.771 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：请求参数-----
+2026-09-06 19:21:21.901 | INFO     | HAT.keywords.api_keywords:发送请求POST:57 - 发送了请求
+2026-09-06 19:21:21.902 | DEBUG    | HAT.keywords.api_keywords:show_log:239 - -------Log：提取json数据-----
+2026-09-06 19:21:21.902 | DEBUG    | HAT.keywords.api_keywords:show_log:240 - 提取json数据:{'操作类型': '提取数据JSON', '表达式': '$..msg', '下标': 0, '变量名': 'my_msg'}
+2026-09-06 19:21:21.902 | DEBUG    | HAT.keywords.api_keywords:show_log:241 - -------END Log：提取json数据-----
