@@ -8,7 +8,7 @@ from tqdm import tqdm
 import requests
 
 from HAT.keywords.api_client import Keywords
-from HAT.parse.读取文件 import readyaml
+from HAT.parse.YamlCaseParser import load_yaml_files
 
 
 client = Keywords(requests.session())
@@ -19,7 +19,7 @@ class TestRun:
     # 只执行包含用例步骤的 YAML，跳过 test.yaml 这类语法学习文件
     data = [
         case
-        for case in readyaml('./examples/api-cases-yaml')
+        for case in load_yaml_files('./examples/api-cases-yaml/')
         if case.get('用例步骤')
     ]
 

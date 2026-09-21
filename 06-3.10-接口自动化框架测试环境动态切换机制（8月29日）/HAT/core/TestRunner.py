@@ -34,7 +34,7 @@ class TestRunner:
             step_name, step_value = next(iter(step.items()))
             print('没有渲染之前的用例数据', step_value)
 
-            context = g_context().show_dict()
+            context = g_context().show_dict()     #URL: http://shop-xo.hctestedu.com
             rendered = refresh(step_value, context)
             step_value = json.loads(rendered)
             print('渲染之后的用例数据', step_value)

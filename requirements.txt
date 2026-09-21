@@ -1,2 +1,36 @@
-jsonpath==0.82.2
+# 接口自动化课程环境（8月24日 - 9月11日）
+# Python 3.12
+# 安装：python -m pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 用例执行与测试报告（第4节起）
+pytest==9.1.1
+allure-pytest==2.16.0
+allure-combine==1.0.11
+
+# 接口请求与 JSON 提取（第1-3节）
 requests==2.34.2
+jsonpath==0.82.2
+
+# 用例数据读取：YAML / Excel（第4-17节）
+PyYAML==6.0.3
+pandas==3.0.3
+openpyxl==3.1.5
+xlrd==2.0.2
+
+# 断言与数据库（第9-11节）
+deepdiff==9.1.0
+PyMySQL==1.2.0
+
+# 变量渲染、日志、进度条、加密（第6、13、15节）
+Jinja2==3.1.6
+loguru==0.7.3
+tqdm==4.70.0
+pycryptodome==3.23.0
+
+# Mock Server（第19节）
+Flask==3.1.3
+
+# 说明：
+# 1. 测试报告还需要 Allure 命令行工具（本机已装：D:\envionment\allure-2.15.0\bin\allure.bat）和 Java。
+# 2. 第10-11节的数据库断言需要可用的 MySQL，连接信息写在 examples/api-cases-excel/context.xlsx。
+# 3. 第1-18节的用例会请求 http://shop-xo.hctestedu.com，运行时需要能访问该地址。
